@@ -80,12 +80,15 @@ body {
   }
   
   .research-sublevel__title {
-    padding: 0 10px 0 15px;
-    margin: 0;
+
+    margin: 0 70px;
     text-align: center;
+    font-weight: bold;
   }
   .research-sublevel__subtitle{
     margin-bottom: 35px;
+    text-align: center;
+    margin-left: 30px;
   }
   .research-sublevel__btn{
     color: white;
@@ -98,12 +101,16 @@ body {
     box-shadow: 5px 5px 5px #c5c0c0;
 }
 .header__steps{
-  display: flex;
-  justify-content: center;
+margin-left: 15px ;
+margin-top: 30px;
+ 
 }
 .steps__list__item__ico{
   width: 12px;
-  margin-right: 40px;
+  margin-right: 20px;
+}
+.steps__list__item__title{
+  font-weight: bold;
 }
 .steps__list__item{
   display: flex;
@@ -112,7 +119,33 @@ body {
   background-color: #eeeeee;
   border-radius: 25px;
   box-shadow:  5px 5px 5px #c5c0c0;
+  align-items: center;
 }
+ol.steps__list{
+  padding: 0;
+  margin: 15px;
+ 
+}
+.restaurant{
+  background-color: #e6e6e6;
+  padding-bottom: 50px;
+  
+}
+.restaurant__title{
+  padding: 25px;
+}
+.card__restaurant{
+  background-color: white;
+  border-radius: 15px;
+  margin: 15px;  
+}
+.restaurant__prev__img{
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+ border-radius: 15px 15px 0 0 ;
+}
+
 
 
 
