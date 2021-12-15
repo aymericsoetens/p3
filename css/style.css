@@ -132,19 +132,39 @@ ol.steps__list{
   
 }
 .restaurant__title{
-  padding: 25px;
+  padding-top: 40px;
+  margin-left: 15px;
 }
 .card__restaurant{
   background-color: white;
   border-radius: 15px;
   margin: 15px;  
+  display: flex;
+  flex-direction: column;
+}
+.restaurant__prev__title{
+  margin: 15px 0 0 15px ;
+}
+.restaurant__prev__subtitle{
+  margin: 0 0 15px 15px ;
 }
 .restaurant__prev__img{
- height: 100%;
- width: 100%;
- object-fit: cover;
+object-fit: cover;
+ height: 180px;
+ width: 100%; 
  border-radius: 15px 15px 0 0 ;
 }
+.restaurant__prev__ico{
+ margin-right: 15px;
+  font-size: x-large;
+}
+.txt_ico{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
 
 
 
