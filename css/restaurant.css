@@ -1,0 +1,123 @@
+
+@charset "UTF-8";
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../font/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Shrikhand-Regular";
+  src: url("../font/Shrikhand-Regular.ttf") format("truetype");
+}
+body {
+  font-family: Roboto-Regular;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+h1, h2 {
+  font-family: "Shrikhand-Regular";
+  font-weight: normal;
+}
+h3{
+    font-family: "Roboto-Regular";
+    border-bottom: 4px solid #4acbab;
+    width: 13%;
+    padding-bottom: 5px;
+    margin-left: 15px;
+    font-weight: normal;
+}
+.header__icon_back{
+    opacity: 0.7;
+    position: absolute;
+    left: 25px;
+    font-size: 18pt;
+}
+.ohmyfood {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border-bottom: 2px inset #c5c0c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+  }
+  .restaurant__picture{
+      height: 255px;
+  }
+.restaurant__picture__img{
+    height: 53%;
+    width: 100%;
+    position: fixed;
+    object-fit: contain;
+}
+.restaurant__menu{
+    background-color: #e6e6e6;
+    position: relative;
+    background-color: #eeeeee;
+    padding-top: 10px;
+    border-radius: 40px 40px 0 0;
+    height: 500px;
+}
+.restaurant__title{
+    margin-left: 15px;
+    font-size:14pt;
+    display: flex;
+    align-items: center;
+}
+.restaurant__prev__ico{
+    font-size: 20pt;
+    opacity: 0.5;
+    margin-left: 35px;
+}
+.prev__menu{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+   justify-content: space-between;
+    margin: 10px;
+    height: 75px;
+    align-items: center;
+}
+.prev__menu__name{
+    margin: 0 0 0 15px;
+
+   
+}
+.prev__menu__infos{
+    margin: 0 0 0 15px;
+}
+.price{
+    margin: 15px;
+}
+
+
+
+
+footer {
+    background-color: #383636;
+    color: white;
+    padding: 15px;
+  }
+  .header__footer {
+    font-family: "Shrikhand-Regular";
+    font-size: 16px;
+  }
+  .list__footer {
+    list-style: none;
+    padding: 2px;
+  }
+  .fa-utensils,
+  .fa-hands-helping {
+    margin-right: 10px;
+    font-size: small;
+    width: 10px;
+  }
+  .list__item__footer {
+    margin: 15px 0;
+  }
+  
+   
