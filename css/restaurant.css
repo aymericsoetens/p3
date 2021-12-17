@@ -52,7 +52,8 @@ h3{
     height: 53%;
     width: 100%;
     position: fixed;
-    object-fit: contain;
+    object-fit: cover;
+    
 }
 .restaurant__menu{
     background-color: #e6e6e6;
