@@ -60,6 +60,7 @@ h3{
     background-color: #eeeeee;
     padding-top: 10px;
     border-radius: 40px 40px 0 0;
+    padding-bottom: 2px;
     
 }
 .restaurant__title{
@@ -84,17 +85,34 @@ h3{
 }
 .prev__menu__name{
     margin: 0 0 0 15px;
-
-   
 }
 .prev__menu__infos{
     margin: 0 0 0 15px;
+    padding-top: 5px;
+    font-size: 11pt;
 }
 .price{
     margin: 15px;
 }
 
 
+.btn__order{
+    background-image: linear-gradient(0deg, #9356dc, #ff79da);
+    box-shadow: 5px 5px 5px #c5c0c0;
+    padding: 15px 20px 15px 20px;
+    border-radius: 35px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 70px;
+}
+.btn__order__text{
+    color: white;
+    display: flex;
+    font-size: 18pt;
+    justify-content: center;
+}
 
 
 footer {
