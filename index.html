@@ -6,13 +6,36 @@
         <meta name="descripton" content="Gagnez du temps en commandant sur Ohmyfood">
         <title>ohmyfood</title>
         <script src="https://kit.fontawesome.com/ead6bd1398.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css"/>
     </head>
 
     <body>
+
+
+        <div class="loader_page">
+            <div class="box">
+                <div class="container">
+                    <div class="loader"><span></span></div>
+                    <div class="plate">
+                        <div class="name">
+                            <h1 class="title">Ohmyfood</h1>
+                            <p class="loading">chargement</p>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </div>  
+        
+        
  <!--header-->
 
-        <header class="main ohmyfood">
+        <header class="header">
             <h1>ohmyfood</h1>
         </header>
 
@@ -72,7 +95,11 @@
                                 <h3 class="restaurant__prev__title">La palette du goût</h3>
                                 <p class="restaurant__prev__subtitle">Ménilmontant</p>
                             </div>
-                            <i class="far fa-heart restaurant__prev__ico"></i>
+                            <div class="coeur">
+                                <a href="#" ><i class="far fa-heart coeur_vide"></i></a>
+                                <a href="#" ><i class="fas fa-heart coeur_plein"></i></a>
+                            </div>
+                        
                         </div>
                     </div>
                 </article>
@@ -89,7 +116,11 @@
                                 <h3 class="restaurant__prev__title">La note enchantée</h3>
                                 <p class="restaurant__prev__subtitle">Charonne</p>
                             </div>
-                            <i class="far fa-heart restaurant__prev__ico"></i>
+                            <div class="coeur">
+                                <a href="#" ><i class="far fa-heart coeur_vide"></i></a>
+                                <a href="#" ><i class="fas fa-heart coeur_plein"></i></a>
+                            </div>
+                        
                         </div>
                     </div>
                 </article>
@@ -103,7 +134,11 @@
                                     <h3 class="restaurant__prev__title">A la francaise</h3>
                                     <p class="restaurant__prev__subtitle">Cité rouge</p>
                                 </div>
-                                <i class="far fa-heart restaurant__prev__ico"></i>
+                                <div class="coeur">
+                                    <a href="#" ><i class="far fa-heart coeur_vide"></i></a>
+                                    <a href="#" ><i class="fas fa-heart coeur_plein"></i></a>
+                                </div>
+                            
                             </div>
                     </div>
                 </article>
@@ -116,8 +151,12 @@
                             <div class="txt">
                                 <h3 class="restaurant__prev__title">Le délice des sens</h3>
                                 <p class="restaurant__prev__subtitle">Folie-Méricourt</p>
+                                </div>
+                                <div class="coeur">
+                                    <a href="#" ><i class="far fa-heart coeur_vide"></i></a>
+                                    <a href="#" ><i class="fas fa-heart coeur_plein"></i></a>
+                                </div>
                             </div>
-                            <i class="far fa-heart restaurant__prev__ico"></i>
                         </div>
                     </div>
                 </article>
@@ -127,7 +166,7 @@
  <!--footer-->
  
         <footer>
-           <h2 class="header__footer">oh my food</h2>
+           <h2 class="header__footer">ohmyfood</h2>
            <ul class="list__footer">
                 <li class="list__item__footer"><i class="fas fa-utensils"></i>Proposer un restaurant</li>
                 <li class="list__item__footer"><i class="fas fa-hands-helping"></i>Devenir partenaire</li>

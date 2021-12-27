@@ -34,17 +34,17 @@ h3{
     left: 25px;
     font-size: 18pt;
 }
-.ohmyfood {
-    width: 100%;
-    height: 50px;
-    background-color: white;
-    border-bottom: 2px inset #c5c0c0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    z-index: 2;
-  }
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border-bottom: 2px inset #c5c0c0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+}
   .restaurant__picture{
       height: 255px;
   }
@@ -70,10 +70,32 @@ h3{
     display: flex;
     align-items: center;
 }
-.restaurant__prev__ico{
-    font-size: 20pt;
-    opacity: 0.5;
-    margin-left: 35px;
+
+.coeur{
+  margin-left: 25px;
+}
+.coeur_vide {
+  color: black;
+    position: absolute;
+    text-decoration: none; 
+    opacity: 1;  
+    font-size: 30px;
+}
+.coeur_vide:hover{
+  opacity: 0;
+}
+.coeur_plein{
+ font-size: 30px;
+  position: relative;
+  text-decoration: none;
+  opacity: 0;
+}
+.coeur_plein:hover {
+ opacity: 1;
+ background: -webkit-linear-gradient(#9356dc,#ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s linear 0s;
 }
 .prev__menu{
     background-color: white;
@@ -87,13 +109,54 @@ h3{
 .prev__menu__name{
     margin: 0 0 0 15px;
 }
+.prev__menu_name_infos{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .prev__menu__infos{
     margin: 0 0 0 15px;
     padding-top: 5px;
     font-size: 11pt;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
 }
-.price{
-    margin: 15px;
+.prev__menu__price{
+
+  right: 50px;
+}
+.check{
+  display: flex;
+  justify-content: right;
+ 
+  
+}
+
+.check_ico{
+  font-size: 20px;
+  color: white;
+  transform: rotate(360deg);
+  transition-duration: 1.5s;
+  }
+
+.box{
+    display: flex;
+    background-color: #99E2D0;
+    height: 75px;
+   justify-content: center;
+   align-items: center;
+   width: 0%;
+   border-radius: 0 20px 20px 0;
+   left: 100%;
+   overflow: hidden;
+  transition-duration: .5s;
+}
+
+.prev__menu:hover .box {
+width: 20%;
+
 }
 
 
@@ -102,7 +165,6 @@ h3{
     box-shadow: 5px 5px 5px #c5c0c0;
     padding: 15px 20px 15px 20px;
     border-radius: 35px;
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
