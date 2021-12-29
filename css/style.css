@@ -1,27 +1,26 @@
 .coeur {
   display: flex;
   justify-content: center;
+  margin-right: 15px;
 }
 
 .coeur_vide {
-  font-size: 100px;
+  font-size: 30px;
   color: black;
   position: absolute;
   text-decoration: none;
   opacity: 1;
 }
-
 .coeur_vide:hover {
   opacity: 0;
 }
 
 .coeur_plein {
-  font-size: 100px;
+  font-size: 30px;
   position: relative;
   text-decoration: none;
   opacity: 0;
 }
-
 .coeur_plein:hover {
   opacity: 1;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
@@ -37,6 +36,7 @@
   }
   100% {
     opacity: 0;
+    z-index: -50;
   }
 }
 
@@ -46,6 +46,7 @@
   }
   100% {
     opacity: 0;
+    z-index: -50;
   }
 }
 .box {
@@ -94,7 +95,6 @@
   -webkit-animation: SPIN 4s linear infinite;
           animation: SPIN 4s linear infinite;
   z-index: -1;
-  opacity: 0.7;
 }
 
 @-webkit-keyframes SPIN {
@@ -102,7 +102,7 @@
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(720deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -111,7 +111,7 @@
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(720deg);
+    transform: rotate(360deg);
   }
 }
 .container .loader::before {
@@ -136,7 +136,7 @@
   height: 22px;
   background: #ffffff;
   border-radius: 50%;
-  z-index: 20;
+  z-index: 10;
   box-shadow: 0 0 10px #9356dc, 0 0 20px #9356dc, 0 0 30px #9356dc, 0 0 40px #9356dc, 0 0 50px #9356dc, 0 0 60px #9356dc, 0 0 70px #9356dc, 0 0 80px #9356dc, 0 0 90px #9356dc, 0 0 100px #9356dc;
 }
 
@@ -227,26 +227,23 @@
   width: 100%;
   position: fixed;
   z-index: 1;
-  -webkit-animation: loader_page_end 4s 2s both;
-          animation: loader_page_end 4s 2s both;
+  -webkit-animation: loader_page_end 3s 2s both;
+          animation: loader_page_end 3s 2s both;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
-
-a {
+body a {
   text-decoration: none;
   color: black;
 }
-
-h1 {
+body h1 {
   font-family: "Shrikhand", cursive;
   font-weight: normal;
 }
-
-h2 {
+body h2 {
   font-size: 16pt;
 }
 
@@ -269,11 +266,13 @@ form.research {
   align-items: flex-end;
   padding: 30px 0 15px 50px;
   height: 65px;
+  position: relative;
+  right: 30px;
+  width: 100%;
 }
 
 .research__ico {
   width: 10px;
-  margin-top: 100px;
   margin-right: 15px;
   margin-bottom: 7px;
 }
@@ -310,7 +309,7 @@ form.research {
 
 .research-sublevel__btn {
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   padding: 15px 25px 15px 25px;
   border-radius: 35px;
   border: none;
@@ -318,15 +317,32 @@ form.research {
   background-image: linear-gradient(0deg, #9356dc, #ff79da);
   box-shadow: 5px 5px 5px #c5c0c0;
 }
+.research-sublevel__btn:hover {
+  background-image: linear-gradient(0deg, #a66eeb, #f385d4);
+  box-shadow: 5px 5px 5px #948e8e;
+}
 
 .header__steps {
   margin-left: 15px;
   margin-top: 30px;
+  position: relative;
+}
+
+.steps__list__item__number {
+  color: white;
+  background-color: #9356dc;
+  border-radius: 50%;
+  position: absolute;
+  left: 15px;
+  font-size: 16px;
+  padding: 5px 10px 5px 10px;
+  font-weight: bold;
 }
 
 .steps__list__item__ico {
-  width: 12px;
+  font-size: 20px;
   margin-right: 20px;
+  opacity: 0.5;
 }
 
 .steps__list__item__title {
@@ -338,14 +354,21 @@ form.research {
   justify-content: center;
   margin-bottom: 15px;
   background-color: #eeeeee;
-  border-radius: 25px;
+  border-radius: 15px;
   box-shadow: 5px 5px 5px #c5c0c0;
   align-items: center;
+  height: 70px;
+}
+.steps__list__item:hover {
+  background-color: #f0e9f8;
+  box-shadow: 5px 5px 5px #948e8e;
 }
 
 ol.steps__list {
   padding: 0;
-  margin: 15px;
+  margin: 30px;
+  margin-left: 25px;
+  margin-bottom: 75px;
 }
 
 .restaurant {
@@ -361,9 +384,13 @@ ol.steps__list {
 .card__restaurant {
   background-color: white;
   border-radius: 15px;
-  margin: 15px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
+  box-shadow: 5px 5px 5px #c5c0c0;
+}
+.card__restaurant:hover {
+  box-shadow: 5px 5px 5px #948e8e;
 }
 
 .restaurant__prev__title {
@@ -407,41 +434,17 @@ ol.steps__list {
 }
 
 .coeur {
-  margin-right: 25px;
-}
-
-.coeur_vide {
-  color: black;
-  position: absolute;
-  text-decoration: none;
-  opacity: 1;
-  font-size: 30px;
-}
-
-.coeur_vide:hover {
-  opacity: 0;
-}
-
-.coeur_plein {
-  font-size: 30px;
-  position: relative;
-  text-decoration: none;
-  opacity: 0;
-}
-
-.coeur_plein:hover {
-  opacity: 1;
-  background: -webkit-linear-gradient(#9356dc, #ff79da);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s linear 0s;
+  margin-right: 15px;
 }
 
 footer {
   background-color: #383636;
   color: white;
-  padding: 15px;
+  padding: 30px;
+}
+
+.mail {
+  color: white;
 }
 
 .header__footer {

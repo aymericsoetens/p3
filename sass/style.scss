@@ -1,29 +1,31 @@
 
 @import "Utils/variables";
 @import "composants/coeur";
-@import "composants/loader.scss";
+@import "composants/loader";
 
 .loader_page{
   width: 100%;
   position: fixed;
   z-index: 1;
-
-  animation: loader_page_end 4s 2s both;
+  animation: loader_page_end 3s 2s both;
 }
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-h1 {
-  font-family: 'Shrikhand', cursive;
-  font-weight: normal;
-}
-h2 {
-  font-size: 16pt;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+
+  h1 {
+    font-family: 'Shrikhand', cursive;
+    font-weight: normal;
+  }
+  h2 {
+    font-size: 16pt;
+  }
 }
 .header {
   width: 100%;
@@ -44,10 +46,12 @@ form.research {
   align-items: flex-end;
   padding: 30px 0 15px 50px;
   height: 65px;
+  position: relative;
+  right: 30px;
+  width: 100%;
 }
 .research__ico {
   width: 10px;
-  margin-top: 100px;
   margin-right: 15px;
   margin-bottom: 7px;
 }
@@ -67,11 +71,12 @@ form.research {
   align-items: center;
   padding: 40px 0 40px 0;
 }
-.research-sublevel__title {
-  margin: 0 70px;
-  text-align: center;
-  font-weight: bold;
-}
+  .research-sublevel__title {
+    margin: 0 70px;
+    text-align: center;
+    font-weight: bold;
+  }
+
 .research-sublevel__subtitle {
   margin-bottom: 35px;
   text-align: center;
@@ -79,21 +84,40 @@ form.research {
 }
 .research-sublevel__btn {
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   padding: 15px 25px 15px 25px;
   border-radius: 35px;
   border: none;
   text-decoration: none;
   background-image:$gradient;
   box-shadow: $box_shadow;
+
+    &:hover{
+      background-image: $light_gradient;
+      box-shadow: 5px 5px 5px #948e8e;
+    }
 }
 .header__steps {
   margin-left: 15px;
   margin-top: 30px;
+  position: relative;
+}
+.steps__list__item__number{
+  color: white;
+  background-color: $couleur_1;
+  border-radius: 50%;
+  position: absolute;
+  left: 15px;
+  font-size: 16px;
+  padding: 5px 10px 5px 10px;
+  font-weight: bold;
 }
 .steps__list__item__ico {
-  width: 12px;
+
+  font-size: 20px;
   margin-right: 20px;
+  opacity: 0.5;
+
 }
 .steps__list__item__title {
   font-weight: bold;
@@ -103,13 +127,21 @@ form.research {
   justify-content: center;
   margin-bottom: 15px;
   background-color: #eeeeee;
-  border-radius: 25px;
+  border-radius: 15px;
   box-shadow: $box_shadow;
   align-items: center;
+  height: 70px;
+
+    &:hover{
+      background-color:  #f0e9f8;
+      box-shadow: 5px 5px 5px #948e8e;
+    }
 }
 ol.steps__list {
   padding: 0;
-  margin: 15px;
+  margin: 30px;
+  margin-left: 25px;
+  margin-bottom: 75px;
 }
 .restaurant {
   background-color: #e6e6e6;
@@ -122,10 +154,16 @@ ol.steps__list {
 .card__restaurant {
   background-color: white;
   border-radius: 15px;
-  margin: 15px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
+  box-shadow: $box_shadow;
+
+    &:hover{
+      box-shadow: 5px 5px 5px #948e8e;
+    }
 }
+
 .restaurant__prev__title {
   margin: 15px 0 0 15px;
 }
@@ -160,36 +198,18 @@ ol.steps__list {
   align-items: center;
 }
 .coeur{
-  margin-right: 25px;
+  margin-right: 15px;
 }
-.coeur_vide {
-  color: black;
-    position: absolute;
-    text-decoration: none; 
-    opacity: 1;  
-    font-size: 30px;
-}
-.coeur_vide:hover{
-  opacity: 0;
-}
-.coeur_plein{
- font-size: 30px;
-  position: relative;
-  text-decoration: none;
-  opacity: 0;
-}
-.coeur_plein:hover {
- opacity: 1;
- background: -webkit-linear-gradient(#9356dc,#ff79da);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s linear 0s;
-}
+
 footer {
   background-color: $couleur_4;
   color: white;
-  padding: 15px;
+  padding: 30px;
+  
 }
+.mail{
+    color: white;
+  }
 .header__footer {
   font-family: 'Shrikhand', cursive;
   font-size: 16px;
