@@ -1,6 +1,7 @@
 
   @keyframes loader_page_end {
   0% {
+        z-index: 50;
         opacity: 1;
     }
     100%{
