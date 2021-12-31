@@ -491,11 +491,15 @@ h3 {
   justify-content: right;
 }
 
+.check_ico {
+  color: white;
+}
+
 .prev__menu:hover .check_ico {
   font-size: 20px;
   color: white;
-  -webkit-animation: check_rotate 1s ease both;
-  animation: check_rotate 1s ease both;
+  -webkit-animation: check_rotate 0.6s ease both;
+  animation: check_rotate 0.6s ease both;
 }
 
 @-webkit-keyframes check_rotate {
@@ -564,6 +568,10 @@ footer {
 .header__footer {
   font-family: "Shrikhand-Regular";
   font-size: 16px;
+}
+
+.link_footer {
+  color: white;
 }
 
 .list__footer {

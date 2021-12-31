@@ -222,7 +222,9 @@ ol.steps__list {
 }
 
 .header_restaurant {
-  justify-content: center;
+  
+  justify-content: left;
+  margin-left: 25px;
   display: flex;
   }
     
@@ -353,6 +355,9 @@ footer {
   font-family: 'Shrikhand', 'cursive';
  
   font-weight: normal;
+}
+.link_footer{
+  color: white;
 }
 .list__footer {
   list-style: none;
