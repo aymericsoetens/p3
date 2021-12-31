@@ -206,8 +206,8 @@ ol.steps__list {
   flex-direction: column-reverse;
   justify-content: space-evenly;
   margin: 30px;
-  height: 100px;
-  padding: 0 20px 0 20px;
+  height: 75px;
+  padding: 10px 20px 0 20px;
   background-color: white;
 }
 
@@ -259,6 +259,7 @@ ol.steps__list {
 .list__footer {
   display: flex;
   justify-content: space-around;
+  font-size: 18px;
 }
 .header__footer {
   display: flex;
@@ -270,6 +271,13 @@ ol.steps__list {
 }
 
 /************************************/
+
+
+
+  
+
+
+
 
 .restaurant__prev__title {
   margin: 15px 0 0 15px;

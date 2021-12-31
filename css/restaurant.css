@@ -286,11 +286,12 @@ h3 {
     padding-top: 5px;
     justify-content: center;
     font-weight: bold;
+    margin-left: 0px;
   }
 
   .restaurant__menu {
     position: relative;
-    background-color: #eeeeee15;
+    background-color: #eeeeee;
   }
 
   .restaurant__title {
@@ -300,7 +301,8 @@ h3 {
 
   .list__footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    font-size: 18px;
   }
 
   .header__footer {
@@ -318,7 +320,7 @@ h3 {
 .restaurant__picture__img {
   height: 53%;
   width: 100%;
-  position: fixed;
+  position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -462,6 +464,10 @@ h3 {
 .prev__menu_name_infos {
   width: 50px;
   flex: 1;
+}
+
+.prev__menu:hover .box {
+  width: 20%;
 }
 
 .prev__menu__infos {
