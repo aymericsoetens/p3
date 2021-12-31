@@ -1,15 +1,15 @@
 .coeur{
     display: flex;
     justify-content: center;
-    margin-right: 15px;
-    
+    margin-left: 30px;
+
 }
 .coeur_vide {
     font-size: 30px;
     color: black;
     position: absolute;
     text-decoration: none; 
-    opacity: 1;  
+    opacity: 0.9;  
     
     &:hover{
     opacity: 0;

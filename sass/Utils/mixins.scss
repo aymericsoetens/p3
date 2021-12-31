@@ -1,0 +1,61 @@
+@mixin step{
+    padding: 5px;
+    transition: 0.2s;
+}
+@mixin transform_card{
+    margin: 30px;
+    transition: 0.4s;
+}
+@mixin btn_scale{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+@mixin scale_menu{
+   transform: scale(1.1);
+    transition: 0.2s ;
+}
+@mixin rotate_check{
+    transform: rotate(deg360);
+    transition: .7s;
+  }
+ 
+
+@mixin card_restaurant_desktop{
+    background-color: white;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: $box_shadow;
+  
+}
+
+@mixin footer {
+    footer {
+        background-color: $couleur_4;
+        color: white;
+        padding: 30px;
+        
+      }
+      .mail{
+          color: white;
+        }
+      .header__footer {
+        font-family: 'Shrikhand', 'cursive';
+        font-size: 16px;
+        font-weight: normal;
+      }
+      .list__footer {
+        list-style: none;
+        padding: 2px;
+      }
+      .fa-utensils,
+      .fa-hands-helping {
+        margin-right: 10px;
+        font-size: small;
+        width: 10px;
+      }
+      .list__item__footer {
+        margin: 15px 0;
+      }
+      
+     
+  }

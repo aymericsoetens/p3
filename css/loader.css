@@ -20,7 +20,7 @@
 }
 .box {
   width: 100%;
-  background: #afaeae;
+  background-color: rgba(175, 174, 174, 0.8);
 }
 
 .container {
@@ -36,7 +36,7 @@
 
 @-webkit-keyframes text-focus-in {
   0% {
-    filter: blur(12px);
+    filter: blur(18px);
     opacity: 0;
   }
   100% {
@@ -47,7 +47,7 @@
 
 @keyframes text-focus-in {
   0% {
-    filter: blur(12px);
+    filter: blur(18px);
     opacity: 0;
   }
   100% {
