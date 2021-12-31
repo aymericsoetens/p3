@@ -169,7 +169,8 @@ ol.steps__list {
 
     &:hover{
       box-shadow: 5px 5px 5px #948e8e;
-      @include transform_card;
+      transform: scale(1.05);
+      transition: 0.2s;
     }
 }
 /*****************desktop version min-width 1024 pixels***************/
@@ -245,6 +246,7 @@ ol.steps__list {
   width:100%;
   box-shadow: $box_shadow;
   display: flex;
+  @include transform_card;
 }
 .restaurant__prev__img {
   height: 53%;
@@ -358,6 +360,13 @@ footer {
 }
 .link_footer{
   color: white;
+  transform: scale(1.05);
+  transition: 0.2s;
+
+&:hover{
+  transform: scale(1.1);
+  transition: 0.2s;
+}
 }
 .list__footer {
   list-style: none;

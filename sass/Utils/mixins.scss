@@ -3,21 +3,18 @@
     transition: 0.2s;
 }
 @mixin transform_card{
-    margin: 30px;
-    transition: 0.4s;
+  transform: scale(1.05);
+  transition: 0.2s;
 }
 @mixin btn_scale{
-    transform: scale(1.1);
+    transform: scale(2);
     transition: 0.2s;
 }
 @mixin scale_menu{
    transform: scale(1.1);
     transition: 0.2s ;
 }
-@mixin rotate_check{
-    transform: rotate(deg360);
-    transition: .7s;
-  }
+
  
 
 @mixin card_restaurant_desktop{

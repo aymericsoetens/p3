@@ -350,8 +350,8 @@ h3 {
   align-items: center;
 }
 .prev__menu:hover {
-  margin: 30px;
-  transition: 0.4s;
+  transform: scale(1.05);
+  transition: 0.2s;
   box-shadow: 5px 5px 5px #c5c0c0;
 }
 
@@ -544,7 +544,7 @@ h3 {
 .btn__order:hover {
   background-image: linear-gradient(0deg, #a66eeb, #f385d4);
   box-shadow: 5px 5px 5px #948e8e;
-  transform: scale(1.1);
+  transform: scale(2);
   transition: 0.2s;
 }
 
@@ -572,6 +572,10 @@ footer {
 
 .link_footer {
   color: white;
+}
+.link_footer:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
 .list__footer {

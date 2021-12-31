@@ -294,7 +294,12 @@ footer {
   }
   .link_footer{
     color: white;
+   
+  &:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
   }
+}
   .list__footer {
     list-style: none;
     padding: 2px;
