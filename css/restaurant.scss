@@ -188,13 +188,9 @@ h3{
   width: 50px;
   flex: 1;
 }
-.prev__menu:hover .box {
-  width: 20%;
-  
+.prev__menu:hover  .box {
+  width: 60px;
   }
-  
-  
-  
 .prev__menu__infos{
     margin: 0 0 0 15px;
     padding-top: 5px;
@@ -214,11 +210,34 @@ h3{
   justify-content: right;
 }
 
-.check_ico{
+.prev__menu:hover .check_ico {
   font-size: 20px;
   color: white;
-
+-webkit-animation: check_rotate 1s ease both;
+	        animation: check_rotate 1s ease both;
 }
+
+@-webkit-keyframes check_rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes check_rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 
 .box{
     display: flex;

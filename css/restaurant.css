@@ -467,7 +467,7 @@ h3 {
 }
 
 .prev__menu:hover .box {
-  width: 20%;
+  width: 60px;
 }
 
 .prev__menu__infos {
@@ -491,11 +491,29 @@ h3 {
   justify-content: right;
 }
 
-.check_ico {
+.prev__menu:hover .check_ico {
   font-size: 20px;
   color: white;
+  -webkit-animation: check_rotate 1s ease both;
+  animation: check_rotate 1s ease both;
 }
 
+@-webkit-keyframes check_rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes check_rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .box {
   display: flex;
   background-color: #99E2D0;
