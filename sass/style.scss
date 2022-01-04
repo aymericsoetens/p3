@@ -148,6 +148,7 @@ form.research {
     &:hover {
       background-color:  #f0e9f8;
       box-shadow: 5px 5px 5px #948e8e;
+      cursor: pointer;
 
         @include step;
     }
@@ -212,6 +213,11 @@ ol.steps__list {
 .steps__list {
   width: 100%;  
 }
+.steps__list__item__ico{
+  display: flex;
+  position: relative;
+  top: -10px;
+}
 
 ol.steps__list {
   display: flex;
@@ -219,16 +225,20 @@ ol.steps__list {
 }
 .steps__list__item {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: space-evenly;
   margin: 30px;
   height: 75px;
   padding: 10px 20px 0 20px;
   background-color: white;
+  &:hover{
+    padding: 15px;
+  }
 }
 
 .steps__list__item__number {
-  left: -60%;
+  left: -5%;
+  top: -27%;
   position: relative;
   
 }

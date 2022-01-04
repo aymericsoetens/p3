@@ -1,22 +1,29 @@
 .coeur {
   display: flex;
   justify-content: center;
-  margin-left: 30px;
+  margin-left: 15px;
 }
 
-.coeur:hover .coeur_vide {
-  font-size: 30px;
+.coeur_vide {
+  font-size: 32px;
   color: black;
   position: absolute;
   text-decoration: none;
+  opacity: 1;
+}
+
+.coeur_vide:hover {
   opacity: 0;
 }
 
-.coeur:hover .coeur_plein {
-  font-size: 30px;
+.coeur_plein {
+  font-size: 32px;
   position: relative;
   text-decoration: none;
   opacity: 0;
+}
+
+.coeur_plein:hover {
   opacity: 1;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
