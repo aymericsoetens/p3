@@ -6,13 +6,13 @@
 
 .coeur_vide {
   font-size: 32px;
-  color: black;
   position: absolute;
   text-decoration: none;
   opacity: 1;
+  padding: 1px;
 }
 
-.coeur_vide:hover {
+.coeur:hover .coeur_vide {
   opacity: 0;
 }
 
@@ -23,13 +23,14 @@
   opacity: 0;
 }
 
-.coeur_plein:hover {
+.coeur:hover .coeur_plein {
   opacity: 1;
+  padding: 1px;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all 0.3s linear 0s;
+  transition: all 1s linear 0s;
 }
 
 @-webkit-keyframes loader_page_end {
@@ -426,7 +427,7 @@ ol.steps__list {
 }
 
 /*****************desktop version min-width 1024 pixels***************/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .research_and_step {
     display: flex;
     background-color: #eeeeee;
@@ -465,7 +466,7 @@ ol.steps__list {
     flex-direction: column;
     justify-content: space-evenly;
     margin: 30px;
-    height: 75px;
+    height: 100px;
     padding: 10px 20px 0 20px;
     background-color: white;
   }
@@ -492,6 +493,7 @@ ol.steps__list {
 
   .restaurant__title {
     font-size: 25px;
+    margin-left: 15%;
   }
 
   .groupe_card {
@@ -535,7 +537,7 @@ ol.steps__list {
     display: flex;
     justify-content: center;
     font-weight: normal;
-    font-size: xx-large;
+    font-size: 32px;
   }
 }
 /************************************/
@@ -547,9 +549,30 @@ ol.steps__list {
     justify-content: center;
   }
 
+  .restaurant__title {
+    margin-left: 60px;
+  }
+
+  .article__restaurant__prev {
+    width: 45%;
+  }
+
   .link_footer:hover {
     transform: scale(1.2);
     transition: 0.2s;
+  }
+
+  .list__footer {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+  }
+
+  .header__footer {
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+    font-size: 32px;
   }
 }
 /*******************************************************/

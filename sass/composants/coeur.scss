@@ -6,26 +6,29 @@
 }
 .coeur_vide {
     font-size: 32px;
-    color: black;
     position: absolute;
     text-decoration: none; 
     opacity: 1;  
+  
     
     
 }
-.coeur_vide:hover{
-    opacity: 0;
+.coeur:hover .coeur_vide{
+    opacity: 0; 
+   
 }
 .coeur_plein{
     font-size: 32px;
     position: relative;
     text-decoration: none;
     opacity: 0;
+
 }
-.coeur_plein:hover {
+.coeur:hover .coeur_plein {
    opacity: 1;
+  
     background: -webkit-linear-gradient(#9356dc,#ff79da);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: all 0.3s linear 0s;
+    transition: all 1s linear 0s;
   }

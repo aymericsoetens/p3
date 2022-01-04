@@ -6,13 +6,13 @@
 
 .coeur_vide {
   font-size: 32px;
-  color: black;
   position: absolute;
   text-decoration: none;
   opacity: 1;
+  padding: 1px;
 }
 
-.coeur_vide:hover {
+.coeur:hover .coeur_vide {
   opacity: 0;
 }
 
@@ -23,13 +23,14 @@
   opacity: 0;
 }
 
-.coeur_plein:hover {
+.coeur:hover .coeur_plein {
   opacity: 1;
+  padding: 1px;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all 0.3s linear 0s;
+  transition: all 1s linear 0s;
 }
 
 @-webkit-keyframes loader_page_end {
@@ -280,35 +281,6 @@ h3 {
 }
 
 /****** desktop version min-width 1024pixels *****/
-@media screen and (min-width: 1024px) {
-  .header__footer {
-    display: flex;
-    justify-content: center;
-    font-weight: normal;
-    font-size: xx-large;
-  }
-
-  .menu {
-    display: flex;
-    width: 32%;
-  }
-
-  .restaurant__subtitle {
-    display: flex;
-    width: 100%;
-  }
-
-  .menu__entree {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-
-  .prev__menu {
-    width: 100%;
-  }
-}
 /****** tablette version min-width 768 pixels *****/
 @media screen and (min-width: 768px) {
   h3 {
@@ -347,7 +319,36 @@ h3 {
     display: flex;
     justify-content: center;
     font-weight: normal;
-    font-size: xx-large;
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    display: flex;
+    width: 32%;
+  }
+
+  .restaurant__subtitle {
+    display: flex;
+    width: 100%;
+  }
+
+  .menu__entree {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .prev__menu {
+    width: 100%;
+  }
+
+  .header__footer {
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+    font-size: 32px;
   }
 }
 /*************restaurant*********************/
@@ -609,7 +610,6 @@ footer {
 
 .header__footer {
   font-family: "Shrikhand-Regular";
-  font-size: 16px;
 }
 
 .link_footer {

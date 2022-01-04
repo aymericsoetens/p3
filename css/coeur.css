@@ -4,18 +4,16 @@
   margin-left: 15px;
 }
 
-
-
-.coeur:hover .coeur_vide {
-  opacity: 0;
+.coeur_vide {
   font-size: 32px;
-  color: black;
   position: absolute;
   text-decoration: none;
   opacity: 1;
 }
 
-
+.coeur:hover .coeur_vide {
+  opacity: 0;
+}
 
 .coeur_plein {
   font-size: 32px;
@@ -24,15 +22,11 @@
   opacity: 0;
 }
 
-.coeur:hover .coeur_plein{
+.coeur:hover .coeur_plein {
   opacity: 1;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all 0.3s linear 0s;
-   font-size: 32px;
-  position: relative;
-  text-decoration: none;
-  opacity: 0;
+  transition: all 1s linear 0s;
 }/*# sourceMappingURL=coeur.css.map */

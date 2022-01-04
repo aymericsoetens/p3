@@ -60,34 +60,7 @@ h3{
 
 
 
-@media screen and (min-width: 1024px){
-  .header__footer {
-    display: flex;
-    justify-content: center;
-    font-weight: normal;
-    font-size: xx-large;
-    } 
-     .menu{
-    display: flex;
-    width: 32%;
-  
-    
-  }
-  .restaurant__subtitle{
-    display: flex;
-    width: 100%;
-  }
-  .menu__entree{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  .prev__menu{
-    width: 100%;
 
-  }
-  }
   
 
 
@@ -130,11 +103,39 @@ h3{
   display: flex;
   justify-content: center;
   font-weight: normal;
-  font-size: xx-large;
-}
+  font-size:32px;
+  }
 }
 
+@media screen and (min-width: 1024px){
+ 
+  .menu{
+ display: flex;
+ width: 32%;
 
+ 
+}
+.restaurant__subtitle{
+ display: flex;
+ width: 100%;
+}
+.menu__entree{
+ display: flex;
+ width: 100%;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+}
+.prev__menu{
+ width: 100%;
+
+}
+.header__footer {
+ display: flex;
+ justify-content: center;
+ font-weight: normal;
+ font-size: 32px;
+ }
+}
 /*************restaurant*********************/
 
 
@@ -322,7 +323,7 @@ footer {
   }
   .header__footer {
     font-family: "Shrikhand-Regular";
-    font-size: 16px;
+    
   }
   .link_footer{
     color: white;
