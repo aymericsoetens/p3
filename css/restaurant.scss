@@ -53,15 +53,44 @@ h3{
   z-index: 1;
 }
 
+
+
+
+/****** desktop version min-width 1024pixels *****/
+
+
+
 @media screen and (min-width: 1024px){
   .header__footer {
     display: flex;
     justify-content: center;
     font-weight: normal;
     font-size: xx-large;
-    }
+    } 
+     .menu{
+    display: flex;
+    width: 32%;
+  
+    
+  }
+  .restaurant__subtitle{
+    display: flex;
+    width: 100%;
+  }
+  .menu__entree{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .prev__menu{
+    width: 100%;
+
+  }
   }
   
+
+
 /****** tablette version min-width 768 pixels *****/
 
 

@@ -4,24 +4,19 @@
   margin-left: 30px;
 }
 
-.coeur_vide {
+.coeur:hover .coeur_vide {
   font-size: 30px;
   color: black;
   position: absolute;
   text-decoration: none;
-  opacity: 0.9;
-}
-.coeur_vide:hover {
   opacity: 0;
 }
 
-.coeur_plein {
+.coeur:hover .coeur_plein {
   font-size: 30px;
   position: relative;
   text-decoration: none;
   opacity: 0;
-}
-.coeur_plein:hover {
   opacity: 1;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
@@ -277,12 +272,34 @@ h3 {
   z-index: 1;
 }
 
+/****** desktop version min-width 1024pixels *****/
 @media screen and (min-width: 1024px) {
   .header__footer {
     display: flex;
     justify-content: center;
     font-weight: normal;
     font-size: xx-large;
+  }
+
+  .menu {
+    display: flex;
+    width: 32%;
+  }
+
+  .restaurant__subtitle {
+    display: flex;
+    width: 100%;
+  }
+
+  .menu__entree {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .prev__menu {
+    width: 100%;
   }
 }
 /****** tablette version min-width 768 pixels *****/
