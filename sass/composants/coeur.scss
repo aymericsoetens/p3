@@ -11,17 +11,17 @@
     text-decoration: none; 
     opacity: 0.9;  
     
-    &:hover{
-    opacity: 0;
-    }
+    .coeur:hover .coeur_vide {
+        opacity: 0;
+ }
 }
-.coeur_plein{
+ .coeur_plein{
     font-size: 30px;
     position: relative;
     text-decoration: none;
     opacity: 0;
 
-    &:hover {
+    .coeur:hover .coeur_plein {
    opacity: 1;
     background: -webkit-linear-gradient(#9356dc,#ff79da);
     background-clip: text;

@@ -11,7 +11,7 @@
   text-decoration: none;
   opacity: 0.9;
 }
-.coeur_vide:hover {
+.coeur_vide .coeur:hover .coeur_vide {
   opacity: 0;
 }
 
@@ -21,7 +21,7 @@
   text-decoration: none;
   opacity: 0;
 }
-.coeur_plein:hover {
+.coeur_plein .coeur:hover .coeur_plein {
   opacity: 1;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
