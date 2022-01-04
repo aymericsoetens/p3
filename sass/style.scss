@@ -1,10 +1,9 @@
-
 @import "./Utils/variables";
 @import "./composants/coeur";
 @import "./composants/loader";
 @import "./Utils/mixins";
 
-
+/************loader********************/
 
 .loader_page{
   width: 100%;
@@ -33,6 +32,8 @@ body {
     font-size: 16pt;
   }
 }
+/*************header**********************/
+
 .header {
   width: 100%;
   height: 60px;
@@ -44,6 +45,8 @@ body {
   position: fixed;
   z-index: 1;
 }
+
+/*************form research*************************/
 
 form.research {
   background-color: #e6e6e6;
@@ -100,6 +103,9 @@ form.research {
         @include btn_scale;
     }
 }
+
+/***************tutorial***************************/
+
 .header__steps {
   margin-left: 15px;
   margin-top: 30px;
@@ -151,6 +157,9 @@ ol.steps__list {
   margin-left: 25px;
   margin-bottom: 75px;
 }
+
+/********section restaurant***********************/
+
 .restaurant {
   background-color: #e6e6e6;
   padding-bottom: 50px;
@@ -173,6 +182,7 @@ ol.steps__list {
       transition: 0.2s;
     }
 }
+
 /*****************desktop version min-width 1024 pixels***************/
 
 @media screen and (min-width: 1024px){
@@ -270,16 +280,29 @@ ol.steps__list {
   justify-content: center;
   font-weight: normal;
   font-size: xx-large;
-}
-
+  }
 }
 
 /************************************/
 
 
 
-  
+/***************version tablette 768 pixels*******************/
 
+@media screen and (min-width: 768px){
+  .groupe_card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }  
+  .link_footer:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+  }
+}
+
+
+/*******************************************************/
 
 
 
@@ -302,7 +325,7 @@ ol.steps__list {
   border-radius: 3px;
   animation:label 2s steps(4,end) infinite both;
  
-
+/*****************animation label**********************/
  }
  @keyframes label{
   from{transform:scale(1);
@@ -344,6 +367,9 @@ ol.steps__list {
   margin-right: 15px;
 }
 
+
+/*************************footer**************************/
+
 footer {
   background-color: $couleur_4;
   color: white;
@@ -355,7 +381,6 @@ footer {
   }
 .header__footer {
   font-family: 'Shrikhand', 'cursive';
- 
   font-weight: normal;
 }
 .link_footer{

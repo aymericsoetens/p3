@@ -225,6 +225,7 @@
     background-position: 500%;
   }
 }
+/************loader********************/
 .loader_page {
   width: 100%;
   height: 100%;
@@ -251,6 +252,7 @@ body h2 {
   font-size: 16pt;
 }
 
+/*************header**********************/
 .header {
   width: 100%;
   height: 60px;
@@ -263,6 +265,7 @@ body h2 {
   z-index: 1;
 }
 
+/*************form research*************************/
 form.research {
   background-color: #e6e6e6;
   display: flex;
@@ -319,10 +322,11 @@ form.research {
 .research-sublevel__btn:hover {
   background-image: linear-gradient(0deg, #a66eeb, #f385d4);
   box-shadow: 5px 5px 5px #948e8e;
-  transform: scale(2);
+  transform: scale(1.1);
   transition: 0.2s;
 }
 
+/***************tutorial***************************/
 .header__steps {
   margin-left: 15px;
   margin-top: 30px;
@@ -378,6 +382,7 @@ ol.steps__list {
   margin-bottom: 75px;
 }
 
+/********section restaurant***********************/
 .restaurant {
   background-color: #e6e6e6;
   padding-bottom: 50px;
@@ -506,6 +511,20 @@ ol.steps__list {
   }
 }
 /************************************/
+/***************version tablette 768 pixels*******************/
+@media screen and (min-width: 768px) {
+  .groupe_card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .link_footer:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+  }
+}
+/*******************************************************/
 .restaurant__prev__title {
   margin: 15px 0 0 15px;
 }
@@ -526,6 +545,7 @@ ol.steps__list {
   border-radius: 3px;
   -webkit-animation: label 2s steps(4, end) infinite both;
           animation: label 2s steps(4, end) infinite both;
+  /*****************animation label**********************/
 }
 
 @-webkit-keyframes label {
@@ -607,6 +627,7 @@ ol.steps__list {
   margin-right: 15px;
 }
 
+/*************************footer**************************/
 footer {
   background-color: #383636;
   color: white;

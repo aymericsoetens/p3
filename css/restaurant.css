@@ -257,6 +257,7 @@ h3 {
   font-weight: normal;
 }
 
+/***************header*************************/
 .header__icon_back {
   opacity: 0.7;
   position: absolute;
@@ -276,7 +277,15 @@ h3 {
   z-index: 1;
 }
 
-/******tablette version min-width 768 pixels*****/
+@media screen and (min-width: 1024px) {
+  .header__footer {
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+    font-size: xx-large;
+  }
+}
+/****** tablette version min-width 768 pixels *****/
 @media screen and (min-width: 768px) {
   h3 {
     border-top: 4px solid #4acbab;
@@ -299,6 +308,11 @@ h3 {
     justify-content: center;
   }
 
+  .link_footer:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+  }
+
   .list__footer {
     display: flex;
     justify-content: space-around;
@@ -312,7 +326,7 @@ h3 {
     font-size: xx-large;
   }
 }
-/**********************************/
+/*************restaurant*********************/
 .restaurant__picture {
   height: 255px;
 }
@@ -453,7 +467,7 @@ h3 {
           animation-delay: 5.5s;
 }
 
-/*-----------------*/
+/**************menu************************/
 .prev__menu__name {
   margin: 0 0 0 15px;
   overflow: hidden;
@@ -464,10 +478,6 @@ h3 {
 .prev__menu_name_infos {
   width: 50px;
   flex: 1;
-}
-
-.prev__menu:hover .box {
-  width: 60px;
 }
 
 .prev__menu__infos {
@@ -486,6 +496,11 @@ h3 {
   font-weight: bold;
 }
 
+/************checkbox*******************/
+.prev__menu:hover .box {
+  width: 60px;
+}
+
 .check {
   display: flex;
   justify-content: right;
@@ -502,6 +517,7 @@ h3 {
   animation: check_rotate 0.6s ease both;
 }
 
+/*************animation rotation icone check******************/
 @-webkit-keyframes check_rotate {
   0% {
     transform: rotate(0);
@@ -544,7 +560,7 @@ h3 {
 .btn__order:hover {
   background-image: linear-gradient(0deg, #a66eeb, #f385d4);
   box-shadow: 5px 5px 5px #948e8e;
-  transform: scale(2);
+  transform: scale(1.1);
   transition: 0.2s;
 }
 
@@ -555,6 +571,7 @@ h3 {
   justify-content: center;
 }
 
+/************************footer*********************/
 footer {
   background-color: #383636;
   color: white;

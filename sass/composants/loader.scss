@@ -4,20 +4,15 @@
   0% {
         z-index: 50;
         opacity: 1;
-      
     }
     100%{
         opacity: 0;
         z-index: -50;
     }
 }
-
   .box{
     width: 100%;
-    
     background-color: $bgloader;
-    
-  
   }
   .container{
      width: 100%;
@@ -30,12 +25,10 @@
   }
   @keyframes text-focus-in {
       0% {
-        
         filter: blur(18px);
         opacity: 0;
       }
       100% {
-        
         filter: blur(0px);
         opacity: 1;
       }
@@ -46,10 +39,8 @@
    height: 200px;
    border-radius: 50%;
    background: -webkit-linear-gradient(#9356dc,#ff79da); 
-  
    animation: SPIN 4s linear infinite;
    z-index: -1;
-   
   }
   @keyframes SPIN{
     0%
@@ -72,8 +63,6 @@
     background-repeat: no-repeat;
     border-top-left-radius:100px ;
     border-bottom-left-radius: 100px;
-
-  
   }
   .container .loader::after{
     content: '';
@@ -85,7 +74,6 @@
     background:#ffffff;
     border-radius: 50%;
     z-index: 10;
-   
     box-shadow: 0 0 10px  $couleur_1,
                 0 0 20px  $couleur_1,
                 0 0 30px  $couleur_1,
@@ -96,7 +84,6 @@
                 0 0 80px  $couleur_1,
                 0 0 90px  $couleur_1,
                 0 0 100px  $couleur_1;      
-  
   }
   .container .loader span {
     position: absolute;
@@ -106,7 +93,6 @@
     bottom: 20px;
     background: rgb(175, 174, 174);
     border-radius: 50%;  
-    
   }
   .name{
     font-family: 'Shrikhand', cursive;
@@ -116,7 +102,6 @@
     flex-direction: column;
    font-size: x-large;
    animation: tracking-in-contract-bck 2s cubic-bezier(.47,0.000,.745,.715) 0s both};
-  
   @keyframes tracking-in-contract-bck {
     0% {
       letter-spacing: 5px;
@@ -127,7 +112,6 @@
       opacity: 0.6;
     }
     100% {
-     
       transform: translateZ(0);
       opacity: 1;
     }
@@ -145,7 +129,6 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
- 
   }
   @keyframes animate {
     0% {
