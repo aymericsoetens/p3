@@ -4,28 +4,25 @@
     margin-left: 30px;
 
 }
-.coeur_vide {
+.coeur:hover .coeur_vide {
     font-size: 30px;
     color: black;
     position: absolute;
-    text-decoration: none; 
-    opacity: 0.9;  
-    
-    .coeur:hover .coeur_vide {
-        opacity: 0;
- }
-}
- .coeur_plein{
+    text-decoration: none;  
+    opacity: 0;
+    }
+
+.coeur:hover .coeur_plein{
     font-size: 30px;
     position: relative;
     text-decoration: none;
     opacity: 0;
 
-    .coeur:hover .coeur_plein {
+   
    opacity: 1;
     background: -webkit-linear-gradient(#9356dc,#ff79da);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.3s linear 0s;
-    }
+    
 }
