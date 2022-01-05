@@ -29,7 +29,7 @@
     font-weight: normal;
   }
   h2 {
-    font-size: 16pt;
+    font-size: 18pt;
   }
 }
 /*************header**********************/
@@ -79,24 +79,25 @@ form.research {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 0 50px 0;
+  padding: 40px 0  60px;
 }
   .research-sublevel__title {
     margin: 0 70px;
     text-align: center;
     font-weight: 900;
-    padding-bottom: 15px;
+    font-size: 24px;
   }
 .research-sublevel__subtitle {
   margin-bottom: 25px;
   text-align: center;
-  margin-left: 30px;
+  margin: 10px 30px 30px 30px;
   color: rgba(0, 0, 0, 0.555);
+  font-size: 18px;
 }
 .research-sublevel__btn {
   color: white;
-  font-size: 15px;
-  padding: 15px 15px 15px 15px;
+  font-size: 17px;
+  padding: 17px 20px 17px 20px;
   border-radius: 35px;
   border: none;
   text-decoration: none;
@@ -115,7 +116,7 @@ form.research {
 
 .header__steps {
   margin-left: 20px;
-  margin-top: 30px;
+  margin-top: 45px;
   position: relative;
   font-weight: 900;
 }
@@ -133,20 +134,31 @@ form.research {
   font-size: 15px;
   margin-right: 20px;
   opacity: 0.5;
-
 }
+.phone{
+  font-size:22px;
+}
+.list{
+  font-size: 20px;
+}
+.shop{
+  font-size: 18px;
+}
+
 .steps__list__item__title {
   font-weight: bold;
 }
 .steps__list__item {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: -8px;
   background-color: #eeeeee;
   border-radius: 20px;
-  box-shadow: $box_shadow;
+  box-shadow: 5px 5px 5px #c5c0c0;
   align-items: center;
-  height: 60px;
+  height: 72px;
+  margin-top: 30px;
+
 
     &:hover {
       background-color:  #f0e9f8;
@@ -175,8 +187,8 @@ ol.steps__list {
   padding-bottom: 50px;
 }
 .restaurant__title {
-  padding-top: 40px;
-  margin-left: 15px;
+  padding-top: 50px;
+  margin-left: 20px;
   font-weight: 900;
 }
 .card__restaurant {
@@ -413,7 +425,7 @@ ol.steps__list {
 footer {
   background-color: $couleur_4;
   color: white;
-  padding: 30px;
+  padding: 30px 20px 27px;
   
 }
 .mail{
@@ -422,6 +434,7 @@ footer {
 .header__footer {
   font-family: 'Shrikhand', 'cursive';
   font-weight: normal;
+  font-size: 19px;
 }
 .link_footer{
   color: white;
@@ -444,5 +457,5 @@ footer {
   width: 10px;
 }
 .list__item__footer {
-  margin: 15px 0;
+  margin: 8px 0;
 }

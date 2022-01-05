@@ -1,9 +1,7 @@
 .coeur {
   display: flex;
   justify-content: center;
-  margin-left: 15px;
   padding-right: 10px;
-  padding-bottom: 15px;
 }
 
 .coeur_vide {
@@ -253,11 +251,13 @@ h1, h2 {
 
 h3 {
   font-family: "Roboto-Regular";
-  border-bottom: 4px solid #4acbab;
+  border-bottom: 3px solid #4acbab;
   width: 45px;
   padding-bottom: 5px;
   margin-left: 15px;
   font-weight: normal;
+  font-size: 18px;
+  margin: 21px 0 16px 22px;
 }
 
 /***************header*************************/
@@ -291,7 +291,6 @@ h3 {
     padding-top: 5px;
     justify-content: center;
     font-weight: bold;
-    margin-left: 0px;
   }
 
   .restaurant__menu {
@@ -357,11 +356,11 @@ h3 {
 }
 
 .restaurant__picture__img {
-  height: 53%;
+  height: 50%;
   width: 100%;
   position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .restaurant__menu {
@@ -370,6 +369,7 @@ h3 {
   padding-top: 10px;
   border-radius: 40px 40px 0 0;
   padding-bottom: 2px;
+  margin-top: 27px;
 }
 
 .restaurant__title {
@@ -377,6 +377,16 @@ h3 {
   font-size: 14pt;
   display: flex;
   align-items: center;
+  margin-bottom: -20px;
+  justify-content: space-between;
+}
+
+.coeur {
+  padding-right: 45px;
+}
+
+.restaurant__subtitle {
+  padding-top: 12px;
 }
 
 .prev__menu {
@@ -385,9 +395,10 @@ h3 {
   display: flex;
   justify-content: space-between;
   margin: 10px;
-  height: 75px;
+  height: 70px;
   align-items: center;
   box-shadow: 5px 5px 5px #c5c0c0;
+  margin: 16px;
 }
 .prev__menu:hover {
   transform: scale(1.05);
@@ -563,7 +574,7 @@ h3 {
 .box {
   display: flex;
   background-color: #99E2D0;
-  height: 75px;
+  height: 70px;
   justify-content: center;
   align-items: center;
   width: 0%;
@@ -581,7 +592,7 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 70px;
+  margin: 59px 87px 78px 87px;
 }
 .btn__order:hover {
   background-image: linear-gradient(0deg, #a66eeb, #f385d4);
@@ -593,7 +604,7 @@ h3 {
 .btn__order__text {
   color: white;
   display: flex;
-  font-size: 18pt;
+  font-size: 14pt;
   justify-content: center;
 }
 
@@ -601,7 +612,7 @@ h3 {
 footer {
   background-color: #383636;
   color: white;
-  padding: 30px;
+  padding: 15px 20px 27px;
 }
 
 .mail {
@@ -610,6 +621,8 @@ footer {
 
 .header__footer {
   font-family: "Shrikhand-Regular";
+  font-weight: normal;
+  font-size: 19px;
 }
 
 .link_footer {
@@ -633,5 +646,5 @@ footer {
 }
 
 .list__item__footer {
-  margin: 15px 0;
+  margin: 8px 0;
 }/*# sourceMappingURL=restaurant.css.map */

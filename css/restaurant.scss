@@ -26,11 +26,13 @@ h1, h2 {
 }
 h3{
     font-family: "Roboto-Regular";
-    border-bottom: 4px solid #4acbab;
+    border-bottom: 3px solid #4acbab;
     width: 45px;
     padding-bottom: 5px;
     margin-left: 15px;
     font-weight: normal;
+    font-size: 18px;
+    margin: 21px 0 16px 22px;
 }
 
 /***************header*************************/
@@ -79,7 +81,7 @@ h3{
   padding-top: 5px;
   justify-content: center;
   font-weight: bold;
-  margin-left: 0px;
+  
 }
 .restaurant__menu{
   position: relative;
@@ -143,10 +145,11 @@ h3{
       height: 255px;
   }
 .restaurant__picture__img{
-    height: 53%;
+    height: 50%;
     width: 100%;
     position: absolute;
-    object-fit: cover; 
+    object-fit: fill; 
+   
 }
 .restaurant__menu{
     position: relative;
@@ -154,12 +157,21 @@ h3{
     padding-top: 10px;
     border-radius: 40px 40px 0 0;
     padding-bottom: 2px;
+    margin-top: 27px;
 }
 .restaurant__title{
     margin-left: 15px;
     font-size:14pt;
     display: flex;
     align-items: center;
+    margin-bottom: -20px;
+    justify-content: space-between;
+}
+.coeur{
+  padding-right: 45px;
+}
+.restaurant__subtitle{
+  padding-top: 12px;
 }
 .prev__menu{
     background-color: white;
@@ -167,10 +179,10 @@ h3{
     display: flex;
    justify-content: space-between;
     margin: 10px;
-    height: 75px;
+    height:70px;
     align-items: center;
     box-shadow: $box_shadow;
-    
+    margin: 16px;
   
 
     &:hover{
@@ -277,7 +289,7 @@ h3{
 .box{
     display: flex;
     background-color: #99E2D0;
-    height: 75px;
+    height: 70px;
     justify-content: center;
     align-items: center;
     width: 0%;
@@ -295,7 +307,7 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 70px;
+    margin: 59px 87px 78px 87px;
 
     &:hover{
       background-image:$light_gradient;
@@ -307,7 +319,7 @@ h3{
 .btn__order__text{
     color: white;
     display: flex;
-    font-size: 18pt;
+    font-size: 14pt;
     justify-content: center;
 }
 
@@ -316,14 +328,15 @@ h3{
 footer {
     background-color: #383636;
     color: white;
-    padding: 30px;
+    padding: 15px 20px 27px;
   }
   .mail{
     color: white;
   }
   .header__footer {
     font-family: "Shrikhand-Regular";
-    
+    font-weight: normal;
+  font-size: 19px;
   }
   .link_footer{
     color: white;
@@ -344,6 +357,6 @@ footer {
     width: 10px;
   }
   .list__item__footer {
-    margin: 15px 0;
+    margin: 8px 0;
   }
   
