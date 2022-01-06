@@ -280,17 +280,15 @@ h3 {
   z-index: 1;
 }
 
-/****** desktop version min-width 1024pixels *****/
 /****** tablette version min-width 768 pixels *****/
 @media screen and (min-width: 768px) {
   h3 {
-    border-top: 4px solid #4acbab;
-    border-bottom: 4px solid #4acbab;
-    width: 100%;
+    width: 50%;
     display: flex;
     padding-top: 5px;
     justify-content: center;
     font-weight: bold;
+    border-bottom: 3px solid #4acbab;
   }
 
   .restaurant__menu {
@@ -308,6 +306,19 @@ h3 {
     transition: 0.2s;
   }
 
+  .restaurant__picture__img {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+
+  .restaurant__subtitle {
+    display: flex;
+    justify-content: center;
+  }
+
   .list__footer {
     display: flex;
     justify-content: space-around;
@@ -321,10 +332,29 @@ h3 {
     font-size: 32px;
   }
 }
-@media screen and (min-width: 1024px) {
+/****** desktop version min-width 992 pixels *****/
+@media screen and (min-width: 992px) {
+  h3 {
+    width: 50%;
+    justify-content: center;
+    display: flex;
+  }
+
   .menu {
     display: flex;
     width: 32%;
+  }
+
+  .coeur {
+    margin-left: 35px;
+  }
+
+  .restaurant__picture__img {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .restaurant__subtitle {
@@ -359,8 +389,8 @@ h3 {
   height: 50%;
   width: 100%;
   position: absolute;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .restaurant__menu {

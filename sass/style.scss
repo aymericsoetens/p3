@@ -206,12 +206,13 @@ ol.steps__list {
     }
 }
 
-/*****************desktop version min-width 1024 pixels***************/
+/*****************desktop version min-width 992 pixels***************/
 
 @media screen and (min-width: 992px){
 .research_and_step{
   display: flex;  
   background-color: #eeeeee;
+  height: 316px;
 }
 
 .research-sublevel{
@@ -267,7 +268,7 @@ ol.steps__list {
 .header_restaurant {
   
   justify-content: left;
-  margin-left: 25px;
+  margin-left: 50px;
   display: flex;
   }
     
@@ -308,11 +309,11 @@ ol.steps__list {
   justify-content: space-around;
   font-size: 18px;
 }
-.header__footer {
+.header__footer{
   display: flex;
   justify-content: center;
   font-weight: normal;
-  font-size:32px;
+ font-size: 26px;
   }
 }
 
