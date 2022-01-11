@@ -125,6 +125,15 @@ width: 50%;
   margin-left: 35px;
 }
 
+.restaurant__title {
+    margin-left: 15px;
+    font-size: 14pt;
+    display: flex;
+    align-items: center;
+    margin-bottom: -20px;
+    justify-content: center;
+}
+
 .restaurant__picture__img {
   height: 50%;
   width: 100%;

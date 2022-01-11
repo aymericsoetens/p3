@@ -13,6 +13,7 @@
 
 .coeur:hover .coeur_vide {
   opacity: 0;
+  transition: all 0.5s linear 0s;
 }
 
 .coeur_plein {
@@ -28,7 +29,7 @@
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all 1s linear 0s;
+  transition: all 0.5s linear 0s;
 }
 
 @-webkit-keyframes loader_page_end {
@@ -347,6 +348,15 @@ h3 {
 
   .coeur {
     margin-left: 35px;
+  }
+
+  .restaurant__title {
+    margin-left: 15px;
+    font-size: 14pt;
+    display: flex;
+    align-items: center;
+    margin-bottom: -20px;
+    justify-content: center;
   }
 
   .restaurant__picture__img {
