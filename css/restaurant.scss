@@ -183,7 +183,7 @@ width: 50%;
     margin-top: 27px;
 }
 .restaurant__title{
-    margin-left: 15px;
+    margin-left: 20px;
     font-size:14pt;
     display: flex;
     align-items: center;
@@ -206,6 +206,7 @@ width: 50%;
     align-items: center;
     box-shadow: $box_shadow;
     margin: 16px;
+    overflow: hidden;
   
 
     &:hover{

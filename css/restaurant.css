@@ -1,7 +1,7 @@
 .coeur {
   display: flex;
   justify-content: center;
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .coeur_vide {
@@ -413,7 +413,7 @@ h3 {
 }
 
 .restaurant__title {
-  margin-left: 15px;
+  margin-left: 20px;
   font-size: 14pt;
   display: flex;
   align-items: center;
@@ -439,6 +439,7 @@ h3 {
   align-items: center;
   box-shadow: 5px 5px 5px #c5c0c0;
   margin: 16px;
+  overflow: hidden;
 }
 .prev__menu:hover {
   transform: scale(1.05);
